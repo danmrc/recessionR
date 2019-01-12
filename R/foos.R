@@ -1,3 +1,7 @@
+#' Loads the dates of begining and ending of recessions acording to NBER
+#'
+#' @param periodicity What is the periodicity of data used. Only accepts (q)uartely or (m)onthly. You can use the whole word or only the first letter
+#' @return An matrix with two columns: the first is the beggining of the recession according to NBER and the second column the end
 nber_load <- function(periodicity){
   if(periodicity == "q"|periodicity == "quartely"){
     load("./data/recessions_quartely.Rdata")
