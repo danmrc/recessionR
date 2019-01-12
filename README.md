@@ -11,5 +11,5 @@ plot_recession("q")
 
 Generates the following figure:
 
-![(example.png)]
+![](example.png)
 
