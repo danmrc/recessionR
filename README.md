@@ -28,7 +28,7 @@ Generates the following figure:
 And now the example for ggplot2. We assume you have a data frame named dat, with two columns, _DATES_ and _IPGMFNQ_ - this is exactly the names you would get downloading the .csv from FRED's website:
 
 ```
-dat[,1] <- as.Date(dad[,1])
+dat[,1] <- as.Date(dat[,1])
 
 ggplot() + geom_line(data = dat,aes(DATE,IPGMFNQ)) + nber_recession_ggplot("q",start_date = dat$DATE[1],end_date = dat$DATE[187]) + theme_light()
 ```
