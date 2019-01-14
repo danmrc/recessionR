@@ -1,8 +1,6 @@
-setwd("./nber_recessions")
-
 ##### Quartely #####
 
-rec_dum <- read.csv("USRECQ.csv")
+rec_dum <- read.csv("./dataraw/USRECQ.csv")
 
 rec_dum <- ts(rec_dum[,2],start=c(1854,04),freq=4)
 

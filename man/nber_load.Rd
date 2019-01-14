@@ -15,3 +15,9 @@ An matrix with two columns: the first is the beggining of the recession accordin
 \description{
 Loads the dates of begining and ending of recessions acording to NBER
 }
+\note{
+The diference between this command and \code{\link{nber_load_ggplot}} is that this one \code{ts} convention, i.e. year.fraction, while \code{\link{nber_load_ggplot}} uses the data that are human readable
+}
+\seealso{
+\code{\link{nber_load_ggplot}}
+}

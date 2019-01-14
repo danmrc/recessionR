@@ -2,12 +2,12 @@
 #'
 #' @param periodicity What is the periodicity of data used. Only accepts (q)uartely or (m)onthly. You can use the whole word or only the first letter
 #' @return An matrix with two columns: the first is the beggining of the recession according to NBER and the second column the end
+#' @note The diference between this command and \code{\link{nber_load_ggplot}} is that this one \code{ts} convention, i.e. year.fraction, while \code{\link{nber_load_ggplot}} uses the data that are human readable
+#' @seealso \code{\link{nber_load_ggplot}}
 nber_load <- function(periodicity){
   if(periodicity == "q"|periodicity == "quartely"){
-    load("./data/recessions_quartely.Rdata")
     dados <- recessions_quartely
   } else if(periodicity == "m"|periodicity == "monthly"){
-    load("./data/recessions_monthly.Rdata")
     dados <- recessions_monthly
   } else{
     stop("Periodicity must be quarters of months")
