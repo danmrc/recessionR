@@ -6,7 +6,7 @@ An R package that allows you to plot NBER recessions gray boxes, both in base pl
 This is not yet aviable at CRAN, but you can install using the **devtools** package:
 
 ```
-devtools::install_github(danmrc/recessionR)
+devtools::install_github("danmrc/recessionR")
 ```
 
 IF you are using WIndows, you must have RTools installed (this is not a package!)
