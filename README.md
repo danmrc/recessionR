@@ -1,5 +1,5 @@
 # recessionR
-An R package that allows you to plot NBER recessions gray boxes, both in base plot and in ggplot2. I got the data from the Federal Reserve Bank of ST Louis aka FRED. [Here is the original series](https://fred.stlouisfed.org/series/USREC)
+A R package that allows you to plot NBER recessions gray boxes, both in base plot and in ggplot2. I got the data from the Federal Reserve Bank of ST Louis aka FRED. [Here is the original series](https://fred.stlouisfed.org/series/USREC)
 
 ## Installing
 
