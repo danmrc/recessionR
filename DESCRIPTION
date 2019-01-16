@@ -7,7 +7,7 @@ Maintainer: Daniel Coutinho <danmc66@gmail.com>
 Description: A package that allows you to plot the NBER recessions shade in both the base plot and ggplot
 License: MIT
 Encoding: UTF-8
-LazyData: false
+LazyData: true
 RoxygenNote: 6.1.1
 Suggests: 
     ggplot2(>= 3.1.0)
