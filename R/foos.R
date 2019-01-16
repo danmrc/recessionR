@@ -6,8 +6,10 @@
 #' @seealso \code{\link{nber_load_ggplot}}
 nber_load <- function(periodicity){
   if(periodicity == "q"|periodicity == "quartely"){
+    load("./data/recessions_quartely.Rdata")
     dados <- recessions_quartely
   } else if(periodicity == "m"|periodicity == "monthly"){
+    load("./data/recessions_monthly.Rdata")
     dados <- recessions_monthly
   } else{
     stop("Periodicity must be quarters of months")
