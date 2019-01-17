@@ -28,5 +28,5 @@ nber_load <- function(periodicity){
 #' plot_recession("q")
 plot_recession <- function(periodicity, ytop = 700, ybottom = -700,alpha = 0.3){
   dados <- nber_load(periodicity = periodicity)
-  rect(xleft = dados[,1],xright = dados[,2], ytop = ytop,ybottom = ybottom, col = rgb(0,0,0,alpha = alpha), border = NA)
+  rect(xleft = dados[,1],xright = dados[,2], ytop = ytop,ybottom = ybottom, col = rgb(0,0,0,alpha = alpha), border = rgb(0,0,0,alpha = alpha))
 }
