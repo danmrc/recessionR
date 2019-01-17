@@ -9,7 +9,7 @@ This is not yet available at CRAN, but you can install using the **devtools** pa
 devtools::install_github("danmrc/recessionR")
 ```
 
-IF you are using WIndows, you must have [RTools](https://cran.r-project.org/) installed (this is not a package!)
+IF you are using Windows, you must have [RTools](https://cran.r-project.org/) installed (this is not a package!)
 
 ## Examples
 
@@ -36,3 +36,7 @@ ggplot() + geom_line(data = dat,aes(DATE,IPGMFNQ)) + nber_recession_ggplot("q",s
 And the result would be:
 
 ![](ggplot_nber.png)
+
+##Reproducibility
+
+The _dataraw_ folder contains both the files that you get from FRED (if you choose to download them in .csv) and the scripts used to build the database. Due to differences between the way the `plot`command and **ggplot** deal with dates, they use diferent methods to get the start and end of recessions. But, besides some bug, they should match. 
