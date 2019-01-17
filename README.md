@@ -37,6 +37,6 @@ And the result would be:
 
 ![](ggplot_nber.png)
 
-##Reproducibility
+## Reproducibility
 
 The _dataraw_ folder contains both the files that you get from FRED (if you choose to download them in .csv) and the scripts used to build the database. Due to differences between the way the `plot`command and **ggplot** deal with dates, they use diferent methods to get the start and end of recessions. But, besides some bug, they should match. 
