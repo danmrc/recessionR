@@ -1,7 +1,7 @@
 Package: recessionR
 Type: Package
 Title: Plot NBER recessions shade in any graphic
-Version: 0.0.2
+Version: 0.0.3
 Authors: Daniel Coutinho
 Maintainer: Daniel Coutinho <danmc66@gmail.com>
 Description: A package that allows you to plot the NBER recessions shade in both the base plot and ggplot
