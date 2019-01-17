@@ -76,5 +76,5 @@ recession_dates_ggplot <- function(periodicity,start_date,end_date){
 #'
 nber_recession_ggplot <- function(periodicity,start_date,end_date,alpha = 0.3){
   dados_rec_ggplot <- recession_dates_ggplot(periodicity = periodicity,start_date = start_date,end_date = end_date)
-  return(geom_rect(data = dados_rec_ggplot,aes(xmin=start_date,xmax=end_date,ymin=-Inf,ymax=Inf,alpha = alpha)))
+  return(ggplot2::geom_rect(data = dados_rec_ggplot,aes(xmin=start_date,xmax=end_date,ymin=-Inf,ymax=Inf,alpha = alpha)))
 }
